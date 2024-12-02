@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wanderlust Adventures</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Wanderlust Adventures</h1>
+        <nav>
+            <ul>
+                <li><a href="../html_pages/index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#">Destinations</a>
+                    <div class="dropdown-content">
+                        <a href="../html_pages/destinations.html">Popular Destinations</a>
+                        <a href="../html_pages/contact.html">Contact</a>
+                    </div>
+                </li>
+                <li><a href="../html_pages/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Explore the World</h2>
+        <p>Your adventure begins here! Discover stunning destinations, hidden gems, and travel tips.</p>
+        <div class="slideshow">
+            <div class="slide fade">
+                <img src="../images/home.jfif" alt="Beautiful Destination 1" class="content-image" style="width: 50%;">
+            </div>
+            <div class="slide fade">
+                <img src="../images/pares.jfif" alt="Beautiful Destination 2" class="content-image" style="width: 50%;">
+            </div>
+            <div class="slide fade">
+                <img src="../images/bali.jfif" alt="Beautiful Destination 3" class="content-image" style="width: 50%;">
+            </div>
+        </div>
+        <button onclick="scrollToTable()">View Popular Destinations</button>
+    </section>
+
+    <section>
+        <h2>Popular Destinations</h2>
+        <table id="destination-table">
+            <thead>
+                <tr>
+                    <th>Destination</th>
+                    <th>Country</th>
+                    <th>Best Time to Visit</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Paris</td>
+                    <td>France</td>
+                    <td>Spring</td>
+                </tr>
+                <tr>
+                    <td>Bali</td>
+                    <td>Indonesia</td>
+                    <td>Summer</td>
+                </tr>
+                <tr>
+                    <td>Kyoto</td>
+                    <td>Japan</td>
+                    <td>Autumn</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Wanderlust Adventures. All rights reserved.</p>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" onclick="scrollToTop()">Back to Top</button>
+</body>
+</html>
